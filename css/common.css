@@ -22,10 +22,30 @@
   font-weight: 800;
   src: url("../fonts/Nexa-XBold.woff") format("woff"), url("../fonts/Nexa-XBold.woff2") format("woff2"), url("../fonts/Nexa-XBold.eot") format("embedded-opentype"), url("../fonts/Nexa-XBold.ttf") format("truetype");
 }
-.test {
-  font-size: 60px;
-  font-family: "Nexa";
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Arguedemo";
   font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  color: #1A1D30;
+}
+.logo__letter {
+  color: #F65606;
+  border: 0.5px solid #1A1D30;
 }
 
 /*# sourceMappingURL=common.css.map */

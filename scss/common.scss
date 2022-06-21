@@ -1,7 +1,34 @@
 @import "fonts";
+@import "variables";
 
-.test {
-  font-size: 60px;
-  font-family: "Nexa";
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+//HEADER
+.header {
+
+}
+
+.logo {
+  font-family: "Arguedemo";
   font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  color: #1A1D30;
+
+  &__letter {
+    color: #F65606;
+    border: .5px solid #1A1D30;
+  }
 }
