@@ -32,8 +32,34 @@
   max-width: 1400px;
 }
 
+.button {
+  padding: 20px 45px;
+  border-radius: 6px;
+  font-family: "Nexa";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+.button_transparent {
+  border: 1px solid #1A1D30;
+  background-color: transparent;
+  color: #1A1D30;
+}
+.button_orange {
+  border: 1px solid #F65606;
+  background-color: #F65606;
+  color: #ffffff;
+}
+
 a {
   text-decoration: none;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 24px 0 29px 17px;
+  border-bottom: 1px solid #DEE1E9;
 }
 
 .logo {
@@ -44,8 +70,21 @@ a {
   color: #1A1D30;
 }
 .logo__letter {
+  text-shadow: 1px 1px 1px #1A1D30;
   color: #F65606;
-  border: 0.5px solid #1A1D30;
+}
+
+.menu {
+  display: flex;
+  margin-left: auto;
+}
+.menu__item {
+  margin-right: 80px;
+  font-family: "Nexa";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=common.css.map */
