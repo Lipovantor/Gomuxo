@@ -22,6 +22,9 @@
   font-weight: 800;
   src: url("../fonts/Nexa-XBold.woff") format("woff"), url("../fonts/Nexa-XBold.woff2") format("woff2"), url("../fonts/Nexa-XBold.eot") format("embedded-opentype"), url("../fonts/Nexa-XBold.ttf") format("truetype");
 }
+.promo {
+  position: relative;
+}
 .promo__head {
   display: flex;
   align-items: flex-end;
@@ -70,6 +73,33 @@
   display: flex;
   align-items: flex-end;
   margin-top: -350px;
+}
+
+.round {
+  border-radius: 50%;
+  position: absolute;
+}
+.round_blue {
+  width: 11px;
+  height: 11px;
+  top: 300px;
+  left: 46px;
+  background-color: #87A0E2;
+}
+.round_purple {
+  width: 17px;
+  height: 17px;
+  top: 211px;
+  left: 114px;
+  background-color: #BA7AD2;
+}
+.round_orange {
+  width: 31px;
+  height: 31px;
+  top: 183px;
+  right: 68px;
+  background-color: transparent;
+  border: 3px solid #F6BA7C;
 }
 
 .stats {
@@ -138,6 +168,11 @@ body {
   border: 1px solid #1A1D30;
   background-color: transparent;
   color: #1A1D30;
+}
+.button_transparent:hover {
+  transition: all 0.4s;
+  background-color: #1A1D30;
+  color: #ffffff;
 }
 .button_orange {
   border: 1px solid #F65606;
