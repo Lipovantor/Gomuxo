@@ -56,6 +56,9 @@
 .promo__img_left {
   margin-top: -20px;
 }
+.promo__img_right {
+  margin-left: auto;
+}
 .promo__button {
   margin-top: 120px;
   margin-right: 30px;
@@ -70,19 +73,25 @@
 }
 
 .stats {
-  display: flex;
-  width: 100%;
-  max-width: 900px;
-  padding: 35px 95px;
-  box-sizing: border-box;
+  position: absolute;
+  width: 52%;
+  left: 0;
   background-color: #1A1D30;
   border-radius: 0 6px 6px 0;
+}
+.stats__wrap {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  padding: 35px 90px 35px 5px;
+  margin-left: auto;
 }
 .stats__col {
   width: 50%;
 }
 .stats__col_left {
   padding: 35px 90px 35px 0;
+  border-right: 1px solid grey;
 }
 .stats__col_right {
   padding: 35px 0 35px 90px;
@@ -101,6 +110,168 @@
   font-size: 18px;
   line-height: 22px;
   color: #CCCCCC;
+}
+
+.business {
+  background-color: #E5EBFF;
+  padding-top: 205px;
+}
+.business__container {
+  display: flex;
+  justify-content: space-between;
+}
+.business__col_left .title-h2 {
+  max-width: 535px;
+  margin-bottom: 40px;
+}
+.business__col_left .text-p {
+  max-width: 495px;
+  margin-bottom: 285px;
+}
+.business__col_right .block {
+  border-top: 1px solid #000000;
+  box-sizing: border-box;
+  padding: 32px 0 54px 0;
+  display: flex;
+  width: 650px;
+  margin-right: 120px;
+}
+.business__col_right .block__head {
+  display: flex;
+}
+.business__col_right .block__label {
+  font-family: "Arguedemo";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  color: #F65606;
+  margin-right: 45px;
+}
+.business__col_right .block__title {
+  margin: 0;
+  font-family: "Arguedemo";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+  color: #1A1D30;
+  margin-bottom: 55px;
+  max-width: 210px;
+}
+.business__col_right .block__text {
+  font-family: "Nexa";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 90px;
+}
+.business__col_right .block__link {
+  border-radius: 50%;
+  padding: 18px 17px 17px 18px;
+  background-color: #F65606;
+  margin-top: 150px;
+  margin-left: auto;
+}
+.business__col_right .block__link_svg:hover {
+  transition: 1.5s;
+  transform: rotate(360deg);
+}
+.business__col_right .block_two .block__label {
+  color: #BF6FE1;
+}
+.business__col_right .block_two .block__link {
+  background-color: #BF6FE1;
+}
+.business__col_right .block_two .block__title {
+  max-width: 315px;
+}
+.business__col_right .block_three .block__label {
+  color: #1A1D30;
+}
+.business__col_right .block_three .block__link {
+  background-color: #1A1D30;
+}
+.business__col_right .block_three .block__title {
+  max-width: 350px;
+}
+.business__box {
+  position: absolute;
+  width: 40%;
+  left: 0;
+  background-color: #FFDF53;
+  border-radius: 0 6px 6px 0;
+  height: 360px;
+  z-index: 1;
+}
+.business__img {
+  position: relative;
+  top: -163px;
+  z-index: 2;
+}
+.business__text {
+  max-width: 185px;
+  font-family: "Nexa";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  position: absolute;
+  margin-left: 350px;
+  margin-top: -105px;
+}
+
+.design {
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+.design .title-h2 {
+  margin: 0 auto;
+  max-width: 1150px;
+  margin-bottom: 65px;
+}
+.design__container {
+  display: flex;
+  justify-content: space-between;
+}
+.design__container_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.design__head {
+  margin-top: 65px;
+}
+.design__head .text-p {
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 460px;
+  margin-bottom: 50px;
+}
+.design__label {
+  font-family: "Arguedemo";
+  font-weight: 400;
+  font-size: 180px;
+  line-height: 198px;
+  color: #1A1D30;
+  margin-right: 55px;
+  margin-top: 68px;
+}
+.design__foot {
+  margin-right: 25px;
+  margin-top: 96px;
+}
+.design__foot_title {
+  font-family: "Arguedemo";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  color: #1A1D30;
+  margin-bottom: 20px;
+}
+.design__foot .text-p {
+  max-width: 555px;
+}
+.design__png {
+  margin-top: -75px;
 }
 
 body {
@@ -142,6 +313,22 @@ a {
 
 p {
   margin: 0;
+}
+
+.title-h2 {
+  font-family: "Arguedemo";
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66px;
+  color: #1A1D30;
+}
+
+.text-p {
+  font-family: "Nexa";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
 }
 
 .header__container {

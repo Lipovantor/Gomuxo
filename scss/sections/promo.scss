@@ -20,7 +20,7 @@
     width: 100%;
     max-width: 190px;
     max-height: 110px;
-    
+
     &-img {
       width: 100%;
       object-fit: cover;
@@ -31,13 +31,17 @@
     display: flex;
     align-items: flex-start;
   }
-  
+
   &__img {
     width: 100%;
     max-width: 560px;
 
     &_left {
       margin-top: -20px;
+    }
+
+    &_right {
+      margin-left: auto;
     }
   }
 
@@ -58,19 +62,26 @@
 }
 
 .stats {
-  display: flex;
-  width: 100%;
-  max-width: 900px;
-  padding: 35px 95px;
-  box-sizing: border-box;
+  position: absolute;
+  width: 52%;
+  left: 0;
   background-color: $second-color;
   border-radius: 0 6px 6px 0;
+
+  &__wrap {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    padding: 35px 90px 35px 5px;
+    margin-left: auto;
+  }
 
   &__col {
     width: 50%;
 
     &_left {
       padding: 35px 90px 35px 0;
+      border-right: 1px solid grey;
     }
 
     &_right {
@@ -93,5 +104,147 @@
     font-size: 18px;
     line-height: 22px;
     color: $color-text-light;
+  }
+}
+
+.business {
+  background-color: $background-color;
+  padding-top: 205px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+
+    &_left {
+
+      .title-h2 {
+        max-width: 535px;
+        margin-bottom: 40px;
+      }
+
+      .text-p {
+        max-width: 495px;
+        margin-bottom: 285px;
+      }
+    }
+
+    &_right {
+
+      .block {
+        border-top: 1px solid #000000;
+        box-sizing: border-box;
+        padding: 32px 0 54px 0;
+        display: flex;
+        width: 650px;
+        margin-right: 120px;
+
+
+        &__head {
+          display: flex;
+        }
+
+        &__label {
+          font-family: 'Arguedemo';
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 33px;
+          color: $third-color;
+          margin-right: 45px;
+        }
+
+        &__title {
+          margin: 0;
+          font-family: 'Arguedemo';
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 44px;
+          color: $second-color;
+          margin-bottom: 55px;
+          max-width: 210px;
+        }
+
+        &__text {
+          font-family: 'Nexa';
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: $dark-color;
+          margin-left: 90px;
+        }
+
+        &__link {
+          border-radius: 50%;
+          padding: 18px 17px 17px 18px;
+          background-color: $third-color;
+          margin-top: 150px;
+          margin-left: auto;
+          &_svg {
+              &:hover {
+                transition: 1.5s;
+                transform: rotate(360deg);
+            }
+          }
+        }
+
+        &_two {
+          .block__label {
+            color: $block-color-two;
+          }
+
+          .block__link {
+            background-color: $block-color-two;
+          }
+
+          .block__title {
+            max-width: 315px;
+          }
+        }
+
+        &_three {
+          .block__label {
+            color: $second-color;
+          }
+
+          .block__link {
+            background-color: $second-color;
+          }
+
+          .block__title {
+            max-width: 350px;
+          }
+        }
+      }
+    }
+  }
+
+  &__box {
+    position: absolute;
+    width: 40%;
+    left: 0;
+    background-color: $box-color;
+    border-radius: 0 6px 6px 0;
+    height: 360px;
+    z-index: 1;
+  }
+
+  &__img {
+    position: relative;
+    top: -163px;
+    z-index: 2;
+  }
+
+  &__text {
+    max-width: 185px;
+    font-family: "Nexa";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark-color;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -105px;
   }
 }
