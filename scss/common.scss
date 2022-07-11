@@ -51,6 +51,22 @@ p {
   margin: 0;
 }
 
+.title-h2 {
+  font-family: "Arguedemo";
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66px;
+  color: $second-color;
+}
+
+.text-p {
+  font-family: "Nexa";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $dark-color;
+}
+
 //HEADER
 .header {
 
@@ -58,7 +74,8 @@ p {
     display: flex;
     align-items: center;
     padding: 24px 0 29px 17px;
-    border-bottom: 1px solid #DEE1E9;;
+    border-bottom: 1px solid #DEE1E9;
+    ;
   }
 }
 
