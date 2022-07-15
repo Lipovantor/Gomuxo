@@ -28,6 +28,12 @@ body {
     border: 1px solid $second-color;
     background-color: transparent;
     color: $second-color;
+
+    &:hover {
+      transition: all .4s;
+      background-color: $second-color;
+      color: $light-color;
+    }
   }
 
   &_orange {
@@ -45,6 +51,22 @@ p {
   margin: 0;
 }
 
+.title-h2 {
+  font-family: "Arguedemo";
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66px;
+  color: $second-color;
+}
+
+.text-p {
+  font-family: "Nexa";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $dark-color;
+}
+
 //HEADER
 .header {
 
@@ -52,7 +74,8 @@ p {
     display: flex;
     align-items: center;
     padding: 24px 0 29px 17px;
-    border-bottom: 1px solid #DEE1E9;;
+    border-bottom: 1px solid #DEE1E9;
+    ;
   }
 }
 
@@ -80,5 +103,65 @@ p {
     font-size: 18px;
     line-height: 22px;
     color: $dark-color;
+  }
+}
+
+//FOOTER
+.footer {
+  padding: 100px 0 145px 0;
+
+  &__container {
+    display: flex;
+    margin-top: 50px;
+    align-items: baseline;
+  }
+
+  &__col {
+    margin-left: 110px;
+
+    .text-p {
+      margin-bottom: 30px;
+    }
+  }
+
+  .button {
+    margin-right: 245px;
+    max-height: 18px;
+  }
+}
+
+// LAST LINE
+.last-line {
+  border-top: 1px solid $border-top-color;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 44px 0;
+  }
+
+  .nav-left {
+
+    &__link {
+      margin-right: 44px;
+      font-family: 'Nexa';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: $dark-color;
+    }
+  }
+
+  .nav-right {
+
+    &__link {
+      margin-left: 60px;
+      font-family: 'Nexa';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: $dark-color;
+    }
   }
 }
