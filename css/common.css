@@ -398,4 +398,49 @@ p {
   color: #000000;
 }
 
+.footer {
+  padding: 100px 0 145px 0;
+}
+.footer__container {
+  display: flex;
+  margin-top: 50px;
+  align-items: baseline;
+}
+.footer__col {
+  margin-left: 110px;
+}
+.footer__col .text-p {
+  margin-bottom: 30px;
+}
+.footer .button {
+  margin-right: 245px;
+  max-height: 18px;
+}
+
+.last-line {
+  border-top: 1px solid #DEE1E9;
+}
+.last-line__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px 0;
+}
+.last-line .nav-left__link {
+  margin-right: 44px;
+  font-family: "Nexa";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.last-line .nav-right__link {
+  margin-left: 60px;
+  font-family: "Nexa";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
 /*# sourceMappingURL=common.css.map */
