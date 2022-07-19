@@ -279,3 +279,21 @@
     margin-top: -105px;
   }
 }
+
+@media (max-width: 1330px) {
+  .business__container {
+    flex-direction: column;
+  }
+
+  .business__col_left .title-h2 {
+    width: 100%;
+  }
+
+// !!!!!!!!!!!!!!
+  // .block {
+  //   width:fit-content;
+  //   width: 100%;
+  //   width: auto;
+  // }
+  
+}

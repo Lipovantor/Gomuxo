@@ -61,3 +61,20 @@
     margin-top: -75px
   }
 }
+
+@media (max-width: 1330px) {
+
+  .design__container {
+    flex-direction: column;
+  }
+
+  .design__label {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .design__png { 
+    display: none;
+  }
+}
